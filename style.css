@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    
+    overflow-x: hidden;
 
 }
 
@@ -60,14 +60,15 @@ header,main{
 .banner-content{
     max-width: 582px;
     max-height: 270px;
-    margin-right: 8.4rem;
+    margin-right: 8rem;
 }
 .banner-content h1{
-    font-size: 3.25rem;
+    font-size: 2.9rem;
     font-weight: 700;
     color: #3A3A3A;
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
+    max-width: 582px;
 }
 .banner-content p{
     font-size: 1rem;
@@ -104,6 +105,10 @@ header,main{
 }
 .banner-img .img1{
     width: 100%;
+}
+.banner-img img{
+    width: 100%;
+    
 }
 /* --------------------------company name-------------------------- */
 
@@ -221,16 +226,16 @@ header,main{
     color: #3A3A3A;
     margin-bottom: 1.5rem;
 }
+
 .description{
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     color: #6C6C6C;
     margin-bottom: 1.5rem;
  
 }
 .description p{
     font-size: 1rem;
-    font-weight: 500;
     color: #6C6C6C;
     margin-bottom: 1.5rem;
     width: 80%;
@@ -275,4 +280,76 @@ header,main{
     font-weight: 500;
 }
 
+/* ------------------------responsive css------------------------ */
+@media screen and (max-width: 768px) {
+    .navbar .nav-links{
+        display: none;
+    }
+    .navbar h2{
+        font-size: 1.5rem;
+        flex-direction: column;
+        margin-left: 5rem;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem auto;
+    }
+    .banner-img{
+        max-width: 257px;
+        max-height: 257px;
+        margin-bottom: 2rem;
+    }
+
+    .banner-content{
+        max-width: 404px;
+        max-height: 222px;
+        margin-right: 0;
+        text-align: center;
+    }
+    .banner-content h1{
+        font-size: 1.5rem;
+    }
+    .banner-content p{
+        font-size: 0.8rem;
+    }
+    .banner-img img{
+        width: 55%;
+    }
+    .company-name{
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 276px;
+        max-height: 135px;
+        margin: 0 auto;
+    }
+    .card{
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 2rem;
+    }
+    .product a{
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+    .feature{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+    }
+    .feature-content{
+        margin-left: 0;
+        text-align: center;
+        align-items: center;
+        padding: 0 1.5rem;
+        margin-bottom: 2.5rem;
+    }
+    .feature-img{
+        max-width: 100%;
+        max-height: 100%;
+        margin-bottom: 1.5rem;
+        margin-left: 1.5rem;
+    }   
+}
 /* ------------------------responsive css------------------------ */
