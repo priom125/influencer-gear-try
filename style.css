@@ -4,8 +4,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    background-color: #FAFAFA;
+    
 
+}
+
+header,main{
+    background-color: #FAFAFA;
 }
 
 /* -----------------shared css----------------- */
@@ -245,10 +249,30 @@
     outline: none;
     cursor: pointer;
 }
-/* -----------------------------------footer---------------------------------- */ */
+/* -----------------------------------footer---------------------------------- */
 .footer{
    background-color: #0A0826;
-    color: #FFFFFF;
     padding: 2rem 0;
     text-align: center;
 }
+
+.footer p{
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.footer h2{
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.footer p, .footer span{
+    color: #D9DBE1;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* ------------------------responsive css------------------------ */
