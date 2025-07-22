@@ -55,6 +55,7 @@ header,main{
     align-items: center;
     justify-content: center;
     margin: 5rem auto;
+    max-width: 1202px;
 }
 
 .banner-content{
@@ -85,7 +86,7 @@ header,main{
     font-weight: 600;
     text-decoration: none;
     width: 196px;
-    height: 44px;
+    height: 45px;
     border: none;
     outline: none;
     cursor: pointer;
@@ -403,6 +404,7 @@ header,main{
         grid-template-columns: repeat(7, 1fr);
         margin: 0 auto;
         width: 750px;
+        height: 100%;
     }
     .card{
         grid-template-columns: repeat(3, 1fr);
