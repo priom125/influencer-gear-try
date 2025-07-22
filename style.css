@@ -369,7 +369,7 @@ header,main{
 }
 /* ------------------------responsive css small device------------------------ */
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:768px) and (max-width:1200px) {
     .banner{
         
         align-items: center;
@@ -415,11 +415,7 @@ header,main{
         align-items: center;
         justify-content: center;
     }
-    /* .product a{
-        text-align: center;
-        margin-right: 0;
-        margin-bottom: 2rem;
-    } */
+
     .feature{
        
         align-items: center;
